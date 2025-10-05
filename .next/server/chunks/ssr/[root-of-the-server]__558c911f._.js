@@ -183,6 +183,12 @@ const contactFormSchema = {
             validation: (Rule)=>Rule.required()
         },
         {
+            name: 'businessType',
+            title: 'Business Type',
+            type: 'string',
+            validation: (Rule)=>Rule.required()
+        },
+        {
             name: 'fullName',
             title: 'Full Name',
             type: 'string',
@@ -195,15 +201,15 @@ const contactFormSchema = {
             validation: (Rule)=>Rule.required().email()
         },
         {
+            name: 'countryCode',
+            title: 'Country Code',
+            type: 'string'
+        },
+        {
             name: 'phone',
             title: 'Phone Number',
             type: 'string',
             validation: (Rule)=>Rule.required()
-        },
-        {
-            name: 'countryCode',
-            title: 'Country Code',
-            type: 'string'
         },
         {
             name: 'selectedDate',
@@ -213,8 +219,19 @@ const contactFormSchema = {
         {
             name: 'primaryInterest',
             title: 'Primary Interest',
-            type: 'string',
-            validation: (Rule)=>Rule.required()
+            type: 'array',
+            of: [
+                {
+                    type: 'string'
+                }
+            ],
+            validation: (Rule)=>Rule.required().min(1)
+        },
+        {
+            name: 'otherInterests',
+            title: 'Other Interests',
+            type: 'text',
+            validation: (Rule)=>Rule.max(500)
         },
         {
             name: 'inquiry',
@@ -246,8 +263,7 @@ const contactFormSchema = {
         {
             name: 'referralSource',
             title: 'Referral Source',
-            type: 'string',
-            validation: (Rule)=>Rule.required()
+            type: 'string'
         },
         {
             name: 'submittedAt',
@@ -293,15 +309,15 @@ const contactFormSchemaIndividual = {
             validation: (Rule)=>Rule.required().email()
         },
         {
+            name: 'countryCode',
+            title: 'Country Code',
+            type: 'string'
+        },
+        {
             name: 'phone',
             title: 'Phone Number',
             type: 'string',
             validation: (Rule)=>Rule.required()
-        },
-        {
-            name: 'countryCode',
-            title: 'Country Code',
-            type: 'string'
         },
         {
             name: 'selectedDate',
@@ -311,8 +327,19 @@ const contactFormSchemaIndividual = {
         {
             name: 'primaryInterest',
             title: 'Primary Interest',
-            type: 'string',
-            validation: (Rule)=>Rule.required()
+            type: 'array',
+            of: [
+                {
+                    type: 'string'
+                }
+            ],
+            validation: (Rule)=>Rule.required().min(1)
+        },
+        {
+            name: 'otherInterests',
+            title: 'Other Interests',
+            type: 'text',
+            validation: (Rule)=>Rule.max(500)
         },
         {
             name: 'inquiry',

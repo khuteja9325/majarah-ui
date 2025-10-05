@@ -146,3 +146,139 @@ a[href^="#"] {
     /*background: linear-gradient(to bottom, #1B2B40 -150%, transparent 60%);*/
   }
 }
+
+/* Translate Toggle Button */
+.translate-toggle-btn {
+  position: fixed !important;
+  top: 20px !important;
+  right: 20px !important;
+  z-index: 1000 !important;
+  background: rgba(85, 161, 231, 0.9) !important;
+  backdrop-filter: blur(10px) !important;
+  border: none !important;
+  border-radius: 25px !important;
+  padding: 10px 16px !important;
+  color: white !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 16px rgba(85, 161, 231, 0.3) !important;
+  transition: all 0.3s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+.translate-toggle-btn:hover {
+  background: rgba(85, 161, 231, 1) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(85, 161, 231, 0.4) !important;
+}
+
+.translate-toggle-btn:active {
+  transform: translateY(0) !important;
+}
+
+/* Google Translate Widget Styling */
+.google-translate-widget {
+  position: fixed !important;
+  top: 70px !important;
+  right: 20px !important;
+  z-index: 1000 !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 40px !important;
+  padding: 12px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  transition: all 0.3s ease !important;
+  animation: slideIn 0.3s ease !important;
+}
+
+.google-translate-widget:hover {
+  background: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Style the Google Translate dropdown */
+.goog-te-combo {
+  background: transparent !important;
+  border: 1px solid rgba(85, 161, 231, 0.3) !important;
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 14px !important;
+  color: #333 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  min-width: 120px !important;
+}
+
+.goog-te-combo:hover {
+  border-color: rgba(85, 161, 231, 0.6) !important;
+  box-shadow: 0 2px 8px rgba(85, 161, 231, 0.2) !important;
+}
+
+.goog-te-combo:focus {
+  outline: none !important;
+  border-color: #55A1E7 !important;
+  box-shadow: 0 0 0 3px rgba(85, 161, 231, 0.1) !important;
+}
+
+/* Style the dropdown options */
+.goog-te-combo option {
+  background: white !important;
+  color: #333 !important;
+  padding: 8px 12px !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Hide the default Google Translate banner */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+/* Ensure body doesn't get pushed down */
+body {
+  top: 0px !important;
+}
+
+/* Slide-in animation for translate widget */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .translate-toggle-btn {
+    top: 10px !important;
+    right: 10px !important;
+    padding: 8px 12px !important;
+    font-size: 12px !important;
+  }
+  
+  .google-translate-widget {
+    top: 60px !important;
+    right: 10px !important;
+    padding: 8px !important;
+  }
+  
+  .goog-te-combo {
+    font-size: 12px !important;
+    padding: 6px 8px !important;
+    min-width: 100px !important;
+  }
+}

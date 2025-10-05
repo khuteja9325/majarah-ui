@@ -6,6 +6,7 @@ import { StarsBackground } from "@/components/ui/stars-background";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { HoverNavLink } from '@/components/ui/HoverNavLink';
 import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/solid';
+import GoogleTranslate from './GoogleTranslate';
 
 const brands = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42'] as const;
 
@@ -34,9 +35,11 @@ export default function HeroSection() {
     }
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY, menuOpen]);
+  const [showTranslate, setShowTranslate] = useState(false);
 
   return (
     <div className="bg-[#0e0e0e] relative w-full text-white md:px-12 overflow-hidden [@media(min-width:2560px)]:px-40" id="hero">
+      <GoogleTranslate isOpen={showTranslate} onClose={() => setShowTranslate(false)} />
       <div className="absolute inset-0 z-0 pointer-events-none">
         <StarsBackground className="z-0" />
         <ShootingStars className="z-20" />
@@ -61,30 +64,34 @@ export default function HeroSection() {
                 style={{ fontSize: 'clamp(0.75rem, 1.2vw, 1.25rem)' }}>
                 <HoverNavLink label="About us" href="#aboutus" />
                 <HoverNavLink label="Services" href="#services" />
-                <HoverNavLink label="What People Say" href="#Testimonials" />
+                <HoverNavLink label="Contact Us" href="#contact" />
               </div>
             </div>
+            <GoogleTranslate isOpen={showTranslate} onClose={() => setShowTranslate(false)} />
             <div className="ml-auto">
-              <a href="#contact" className="inline-flex items-center rounded-full border border-white/10 bg-[#1B2B40] text-white hover:bg-[#26364e] transition-all"
-                style={{ fontSize: 'clamp(0.75rem, 1.2vw, 1.125rem)', height: 'clamp(2.5rem, 4vh, 3.5rem)', paddingInline: 'clamp(1rem, 2.5vw, 2.5rem)' }}>
-                Contact Us
+              <a  className="inline-flex items-center rounded-full border border-white/10 bg-[#1B2B40] text-white hover:bg-[#26364e] transition-all"
+                style={{ fontSize: 'clamp(0.75rem, 1.2vw, 1.125rem)', height: 'clamp(2.5rem, 4vh, 3.5rem)', paddingInline: 'clamp(1rem, 2.5vw, 2.5rem)' }}
+                onClick={() => setShowTranslate(!showTranslate)}
+                >
+                 🌐 Translate
               </a>
             </div>
           </div>
 
-          <div className="md:hidden">
-            <button onClick={() => setMenuOpen(!menuOpen)} className="text-white">
+          <div className="md:hidden top-20">
+            <button onClick={() => setMenuOpen(!menuOpen)} className="text-white ">
               {menuOpen ? <XMarkIcon className="w-10 h-10 mr-5" /> : <Bars3Icon className="w-10 h-10 mr-5" />}
             </button>
           </div>
         </div>
 
         {menuOpen && (
+
           <div className="md:hidden flex flex-col items-center gap-4 mt-4 py-4 px-4 bg-[#1B2B40]/80 rounded-xl border border-white/10 backdrop-blur-sm">
             <HoverNavLink label="About us" href="#aboutus" />
-            <HoverNavLink label="Services" href="#services" />
-            <HoverNavLink label="Project" href="#services" />
-            <a href="#contact" className="inline-flex items-center justify-center h-10 px-6 rounded-full bg-[#1B2B40] border border-white/10 text-sm font-poppins text-white hover:bg-[#26364e] transition">Contact Us</a>
+              <HoverNavLink label="Services" href="#services" />
+              <HoverNavLink label="Contact Us" href="#contact" />
+            <a className="inline-flex items-center justify-center h-10 px-6 rounded-full bg-[#1B2B40] border border-white/10 text-sm font-poppins text-white hover:bg-[#26364e] transition"onClick={() => setShowTranslate(!showTranslate)}> 🌐 Translate</a>
           </div>
         )}
 

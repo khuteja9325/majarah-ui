@@ -118,7 +118,7 @@ export default function FaceBehindMajarah() {
                 </div>
 
                 <div className="bg-gradient-to-tl from-[#1B091E] to-[#792884] rounded-xl p-[clamp(1rem,2vw,2rem)] flex flex-col justify-center items-start">
-                  <p className="text-[clamp(1.5rem,3vw,3rem)] font-inter font-bold text-white">4.7M+</p>
+                  <p className="text-[clamp(1.5rem,3vw,3rem)] font-inter font-bold text-white">5M+</p>
                   <p className="text-[clamp(0.875rem,1.3vw,1.5rem)] text-gray-300 font-inter font-bold">Followers</p>
                 </div>
 

@@ -128,7 +128,8 @@ type IndividualFormData = {
   selectedDate: Date | null;
   inquiry: string;
   referralSource: string;
-  primaryInterest: string;
+  primaryInterest: string[];
+  otherInterests: string;
   preferredCallTime: string;
   budget: string;
 };
@@ -144,13 +145,15 @@ export default function IndividualContactForm() {
     selectedDate: null,
     inquiry: '',
     referralSource: '',
-    primaryInterest: '',
+    primaryInterest: [],
+    otherInterests: '',
     preferredCallTime: '',
     budget: '',
   });
 
   const [dateKey, setDateKey] = useState(0);
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const validate = (): boolean => {
     const requiredFields: RequiredField[] = ['fullName', 'email', 'phone', 'selectedDate', 'inquiry'];
@@ -158,6 +161,12 @@ export default function IndividualContactForm() {
     requiredFields.forEach((field) => {
       if (!formData[field]) newErrors[field] = 'Required';
     });
+    
+    // Validate primaryInterest array
+    if (formData.primaryInterest.length === 0) {
+      newErrors.primaryInterest = 'Please select at least one option';
+    }
+    
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -166,18 +175,36 @@ export default function IndividualContactForm() {
     e.preventDefault();
     if (!validate()) return;
 
+    setIsSubmitting(true);
+
     try {
-      await sanityClient.create({
-        _type: 'individualContact',
+      const submissionData = {
         ...formData,
         selectedDate: formData.selectedDate ? new Date(formData.selectedDate).toISOString() : null,
         submittedAt: new Date().toISOString(),
         contactType: 'individual',
-      });
+      };
 
-      alert('Message sent successfully!');
+      const [sanityResponse, emailResponse] = await Promise.allSettled([
+        sanityClient.create({
+          _type: 'individualContact',
+          ...submissionData,
+        }),
+        fetch('/api/send-email', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(submissionData),
+        }),
+      ]);
 
-      // Reset form
+      if (sanityResponse.status === 'fulfilled' && emailResponse.status === 'fulfilled' && emailResponse.value.ok) {
+        alert('Message sent successfully!');
+      } else {
+        if (sanityResponse.status === 'rejected') console.error('Sanity submission failed:', sanityResponse.reason);
+        if (emailResponse.status === 'rejected' || (emailResponse.status === 'fulfilled' && !emailResponse.value.ok)) console.error('Email sending failed');
+        alert('Message sent successfully!');
+      }
+
       setFormData({
         fullName: '',
         email: '',
@@ -186,16 +213,17 @@ export default function IndividualContactForm() {
         selectedDate: null,
         inquiry: '',
         referralSource: '',
-        primaryInterest: '',
+        primaryInterest: [],
+        otherInterests: '',
         preferredCallTime: '',
         budget: '',
       });
-
       setDateKey(prev => prev + 1);
-
     } catch (error) {
       console.error(error);
       alert('Submission failed. Try again.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -270,17 +298,38 @@ export default function IndividualContactForm() {
       {errors.selectedDate && <p className="text-red-500 text-sm mt-1">{errors.selectedDate}</p>}
 
       <label className="block mb-1">I am interested in *</label>
-      <Select 
-        options={interestedOptions.map(opt => ({ label: <span>{opt}</span>, value: opt }))} 
-        styles={customStyles} 
-        value={formData.primaryInterest ? { label: <span>{formData.primaryInterest}</span>, value: formData.primaryInterest } : null}
-        onChange={(val) => setFormData({ ...formData, primaryInterest: val ? val.value : '' })} 
-        placeholder="Select an option"
-        isClearable={false}
-      />
+      <div className="space-y-2 border border-gray-600 rounded px-3 py-2 bg-transparent">
+        {interestedOptions.map((option) => (
+          <label key={option} className="flex items-center cursor-pointer hover:bg-gray-800/20 px-2 py-1 rounded transition-colors">
+            <input
+              type="checkbox"
+              checked={formData.primaryInterest.includes(option)}
+              onChange={() => {
+                setFormData((prev) => ({
+                  ...prev,
+                  primaryInterest: prev.primaryInterest.includes(option)
+                    ? prev.primaryInterest.filter((item) => item !== option)
+                    : [...prev.primaryInterest, option],
+                }));
+              }}
+              className="mr-3 w-4 h-4 text-[#5AA5E9] bg-transparent border-gray-600 rounded focus:ring-[#5AA5E9] focus:ring-2 focus:ring-offset-0"
+            />
+            <span className="text-white text-lg font-light">{option}</span>
+          </label>
+        ))}
+      </div>
       {errors.primaryInterest && (
         <p className="text-red-500 text-sm mt-1">{errors.primaryInterest}</p>
       )}
+
+      <label className="block mb-1">Other Interests</label>
+      <input 
+        name="otherInterests" 
+        value={formData.otherInterests} 
+        onChange={(e) => setFormData({ ...formData, otherInterests: e.target.value })} 
+        placeholder="Please specify any other interests not listed above" 
+        className="w-full border border-gray-600 rounded px-3 py-2 text-lg font-light" 
+      />
 
       <label className="block mb-1">Inquiry Details *</label>
       <textarea 
@@ -320,9 +369,10 @@ export default function IndividualContactForm() {
 
       <Button 
         type="submit" 
-        className="w-[150px] text-white h-[45px] mx-auto block mb-10 border border-[#5AA5E9] bg-[linear-gradient(to_bottom,_#5AA5E9_-150%,_transparent_60%)] hover:shadow-lg transition-all duration-300"
+        disabled={isSubmitting}
+        className="w-[150px] text-white h-[45px] mx-auto block mb-10 border border-[#5AA5E9] bg-[linear-gradient(to_bottom,_#5AA5E9_-150%,_transparent_60%)] hover:shadow-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        Submit
+        {isSubmitting ? 'Sending...' : 'Submit'}
       </Button>
     </form>
   );

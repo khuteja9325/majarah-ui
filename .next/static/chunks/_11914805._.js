@@ -376,9 +376,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$shooting
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$HoverNavLink$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/HoverNavLink.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$solid$2f$esm$2f$XMarkIcon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XMarkIcon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/solid/esm/XMarkIcon.js [app-client] (ecmascript) <export default as XMarkIcon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$solid$2f$esm$2f$Bars3Icon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bars3Icon$3e$__ = __turbopack_context__.i("[project]/node_modules/@heroicons/react/24/solid/esm/Bars3Icon.js [app-client] (ecmascript) <export default as Bars3Icon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$GoogleTranslate$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/GoogleTranslate.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -468,6 +470,7 @@ function HeroSection() {
         lastScrollY,
         menuOpen
     ]);
+    const [showTranslate, setShowTranslate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "bg-[#0e0e0e] relative w-full text-white md:px-12 overflow-hidden [@media(min-width:2560px)]:px-40",
         id: "hero",
@@ -479,20 +482,20 @@ function HeroSection() {
                         className: "z-0"
                     }, void 0, false, {
                         fileName: "[project]/components/HeroSection.tsx",
-                        lineNumber: 41,
+                        lineNumber: 43,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$shooting$2d$stars$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ShootingStars"], {
                         className: "z-20"
                     }, void 0, false, {
                         fileName: "[project]/components/HeroSection.tsx",
-                        lineNumber: 42,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/HeroSection.tsx",
-                lineNumber: 40,
+                lineNumber: 42,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -519,7 +522,7 @@ function HeroSection() {
                         className: "absolute top-0 left-1/2 -translate-x-1/2 w-full h-[50vh] md:h-[80vh] bg-[radial-gradient(ellipse_at_top,_#4899E3_30%,_transparent_70%)] blur-4xl pointer-events-none z-0 [@media(min-width:2560px)]:h-[60vh]"
                     }, void 0, false, {
                         fileName: "[project]/components/HeroSection.tsx",
-                        lineNumber: 47,
+                        lineNumber: 49,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -531,7 +534,7 @@ function HeroSection() {
                                 className: "h-auto w-[clamp(8rem,18vw,30rem)]"
                             }, void 0, false, {
                                 fileName: "[project]/components/HeroSection.tsx",
-                                lineNumber: 56,
+                                lineNumber: 58,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -550,7 +553,7 @@ function HeroSection() {
                                                     href: "#aboutus"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/HeroSection.tsx",
-                                                    lineNumber: 62,
+                                                    lineNumber: 64,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$HoverNavLink$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["HoverNavLink"], {
@@ -558,27 +561,32 @@ function HeroSection() {
                                                     href: "#services"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/HeroSection.tsx",
-                                                    lineNumber: 63,
+                                                    lineNumber: 65,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$HoverNavLink$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["HoverNavLink"], {
-                                                    label: "What People Say",
-                                                    href: "#Testimonials"
+                                                    label: "Contact Us",
+                                                    href: "#contact"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/HeroSection.tsx",
-                                                    lineNumber: 64,
+                                                    lineNumber: 66,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/HeroSection.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 62,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/HeroSection.tsx",
-                                        lineNumber: 59,
+                                        lineNumber: 61,
                                         columnNumber: 13
+                                    }, this),
+                                    showTranslate && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$GoogleTranslate$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                                        fileName: "[project]/components/HeroSection.tsx",
+                                        lineNumber: 70,
+                                        columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "ml-auto",
@@ -590,21 +598,22 @@ function HeroSection() {
                                                 height: 'clamp(2.5rem, 4vh, 3.5rem)',
                                                 paddingInline: 'clamp(1rem, 2.5vw, 2.5rem)'
                                             },
-                                            children: "Contact Us"
+                                            onClick: ()=>setShowTranslate(!showTranslate),
+                                            children: "🌐 Translate"
                                         }, void 0, false, {
                                             fileName: "[project]/components/HeroSection.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 73,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/HeroSection.tsx",
-                                        lineNumber: 67,
+                                        lineNumber: 72,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/HeroSection.tsx",
-                                lineNumber: 58,
+                                lineNumber: 60,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -616,29 +625,29 @@ function HeroSection() {
                                         className: "w-10 h-10 mr-5"
                                     }, void 0, false, {
                                         fileName: "[project]/components/HeroSection.tsx",
-                                        lineNumber: 77,
+                                        lineNumber: 84,
                                         columnNumber: 27
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroicons$2f$react$2f$24$2f$solid$2f$esm$2f$Bars3Icon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bars3Icon$3e$__["Bars3Icon"], {
                                         className: "w-10 h-10 mr-5"
                                     }, void 0, false, {
                                         fileName: "[project]/components/HeroSection.tsx",
-                                        lineNumber: 77,
+                                        lineNumber: 84,
                                         columnNumber: 70
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/HeroSection.tsx",
-                                    lineNumber: 76,
+                                    lineNumber: 83,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/HeroSection.tsx",
-                                lineNumber: 75,
+                                lineNumber: 82,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/HeroSection.tsx",
-                        lineNumber: 55,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     menuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -649,7 +658,7 @@ function HeroSection() {
                                 href: "#aboutus"
                             }, void 0, false, {
                                 fileName: "[project]/components/HeroSection.tsx",
-                                lineNumber: 84,
+                                lineNumber: 91,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$HoverNavLink$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["HoverNavLink"], {
@@ -657,16 +666,16 @@ function HeroSection() {
                                 href: "#services"
                             }, void 0, false, {
                                 fileName: "[project]/components/HeroSection.tsx",
-                                lineNumber: 85,
-                                columnNumber: 13
+                                lineNumber: 92,
+                                columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$HoverNavLink$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["HoverNavLink"], {
-                                label: "Project",
-                                href: "#services"
+                                label: "Contact Us",
+                                href: "#contact"
                             }, void 0, false, {
                                 fileName: "[project]/components/HeroSection.tsx",
-                                lineNumber: 86,
-                                columnNumber: 13
+                                lineNumber: 93,
+                                columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "#contact",
@@ -674,20 +683,20 @@ function HeroSection() {
                                 children: "Contact Us"
                             }, void 0, false, {
                                 fileName: "[project]/components/HeroSection.tsx",
-                                lineNumber: 87,
+                                lineNumber: 94,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/HeroSection.tsx",
-                        lineNumber: 83,
+                        lineNumber: 90,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "border-b border-white/20 w-full mb-5"
                     }, void 0, false, {
                         fileName: "[project]/components/HeroSection.tsx",
-                        lineNumber: 91,
+                        lineNumber: 98,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -727,7 +736,7 @@ function HeroSection() {
                                             className: "absolute inset-[-1000%] animate-[spin_8s_linear_infinite] bg-[conic-gradient(from_0deg_at_50%_50%,#77B8F3_0%,#FFFFFF_50%,#104677_100%)]"
                                         }, void 0, false, {
                                             fileName: "[project]/components/HeroSection.tsx",
-                                            lineNumber: 116,
+                                            lineNumber: 123,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -740,13 +749,13 @@ function HeroSection() {
                                             children: "Creating Digital That Matters"
                                         }, void 0, false, {
                                             fileName: "[project]/components/HeroSection.tsx",
-                                            lineNumber: 117,
+                                            lineNumber: 124,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/HeroSection.tsx",
-                                    lineNumber: 115,
+                                    lineNumber: 122,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
@@ -783,13 +792,13 @@ function HeroSection() {
                                                     children: "Just Create Content"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/HeroSection.tsx",
-                                                    lineNumber: 135,
+                                                    lineNumber: 142,
                                                     columnNumber: 26
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/HeroSection.tsx",
-                                            lineNumber: 134,
+                                            lineNumber: 141,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -801,19 +810,19 @@ function HeroSection() {
                                                     children: "Impact"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/HeroSection.tsx",
-                                                    lineNumber: 138,
+                                                    lineNumber: 145,
                                                     columnNumber: 26
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/HeroSection.tsx",
-                                            lineNumber: 137,
+                                            lineNumber: 144,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/HeroSection.tsx",
-                                    lineNumber: 127,
+                                    lineNumber: 134,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -836,7 +845,7 @@ function HeroSection() {
                                     children: "Founded by Eisa Al Habib, Emmy® award-winning filmmaker and Forbes 30 Under 30 honoree, Majarah is a full-scale media agency delivering next-level storytelling, influencer-driven campaigns, and cross-platform digital marketing that moves people—and brands."
                                 }, void 0, false, {
                                     fileName: "[project]/components/HeroSection.tsx",
-                                    lineNumber: 142,
+                                    lineNumber: 149,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].a, {
@@ -871,18 +880,18 @@ function HeroSection() {
                                     children: "Let’s Work Together →"
                                 }, void 0, false, {
                                     fileName: "[project]/components/HeroSection.tsx",
-                                    lineNumber: 152,
+                                    lineNumber: 159,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/HeroSection.tsx",
-                            lineNumber: 95,
+                            lineNumber: 102,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/HeroSection.tsx",
-                        lineNumber: 94,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -893,7 +902,7 @@ function HeroSection() {
                                 children: "Top-tier brands and governments redefining how stories are told online."
                             }, void 0, false, {
                                 fileName: "[project]/components/HeroSection.tsx",
-                                lineNumber: 174,
+                                lineNumber: 181,
                                 columnNumber: 11
                             }, this),
                             [
@@ -944,44 +953,44 @@ function HeroSection() {
                                                     }
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/HeroSection.tsx",
-                                                    lineNumber: 198,
+                                                    lineNumber: 205,
                                                     columnNumber: 13
                                                 }, this)
                                             }, `${row}-${i}`, false, {
                                                 fileName: "[project]/components/HeroSection.tsx",
-                                                lineNumber: 194,
+                                                lineNumber: 201,
                                                 columnNumber: 11
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/components/HeroSection.tsx",
-                                        lineNumber: 187,
+                                        lineNumber: 194,
                                         columnNumber: 7
                                     }, this)
                                 }, row, false, {
                                     fileName: "[project]/components/HeroSection.tsx",
-                                    lineNumber: 179,
+                                    lineNumber: 186,
                                     columnNumber: 5
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/HeroSection.tsx",
-                        lineNumber: 173,
+                        lineNumber: 180,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/HeroSection.tsx",
-                lineNumber: 45,
+                lineNumber: 47,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/HeroSection.tsx",
-        lineNumber: 39,
+        lineNumber: 41,
         columnNumber: 5
     }, this);
 }
-_s(HeroSection, "so8tuvhuMjzVB5EKqQ0AwfbHquA=");
+_s(HeroSection, "YPw1Q08vv7TRqsGL6euzxlMKZik=");
 _c = HeroSection;
 var _c;
 __turbopack_context__.k.register(_c, "HeroSection");
@@ -2151,7 +2160,7 @@ function FaceBehindMajarah() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "md:w-1/2 w-full grid grid-cols-2 gap-[clamp(1rem,2vw,1.5rem)] relative h-[clamp(500px,55vh,1000px)] md:h-[clamp(550px,50vh,950px)] xl:h-[clamp(600px,80vh,1300px)]   overflow-hidden",
+                        className: "md:w-1/2 w-full grid grid-cols-2 gap-[clamp(1rem,2vw,1.5rem)] relative h-[clamp(500px,55vh,1000px)] md:h-[clamp(550px,50vh,950px)] xl:h-[clamp(600px,80vh,1300px)] overflow-hidden",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                 className: "flex flex-col gap-[clamp(1rem,2vw,2rem)]",
@@ -2321,7 +2330,7 @@ function FaceBehindMajarah() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-[clamp(1.5rem,3vw,3rem)] font-inter font-bold text-white",
-                                                        children: "4.7M+"
+                                                        children: "5M+"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/FaceBehindMajarah.tsx",
                                                         lineNumber: 121,
@@ -2430,7 +2439,7 @@ const sanityClient = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
     projectId: 'o4eknloj',
     dataset: 'production',
     apiVersion: '2023-07-19',
-    token: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].env.NEXT_PUBLIC_SANITY_WRITE_TOKEN,
+    token: ("TURBOPACK compile-time value", "skGa5yUFCDMDQfAVSAWXpS35HVVHtGZ4mJgMq4K4BGP6GNG6ouIMsZh44DgGW4P8GGDLBZfk7l6NnYtDWpmxhSR4TTJ68v0FIrU43HlmIgVWuRqsq04xb6nqsZ59R6PmkYwP0RntvhQvH8SpcxJY5567voJb1V9xQh5b2na1BEBZgVq28Se8"),
     useCdn: false
 });
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
@@ -3831,7 +3840,8 @@ function OrganizationContactForm() {
         referralSource: '',
         businessSize: businessSizeOptions[0].value,
         yearsInBusiness: '',
-        primaryInterest: '',
+        primaryInterest: [],
+        otherInterests: '',
         preferredCallTime: '',
         budget: ''
     });
@@ -3851,6 +3861,10 @@ function OrganizationContactForm() {
         requiredFields.forEach((field)=>{
             if (!formData[field]) newErrors[field] = 'Required';
         });
+        // Validate primaryInterest array
+        if (formData.primaryInterest.length === 0) {
+            newErrors.primaryInterest = 'Please select at least one option';
+        }
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
@@ -3879,7 +3893,8 @@ function OrganizationContactForm() {
                 referralSource: '',
                 businessSize: '',
                 yearsInBusiness: '',
-                primaryInterest: '',
+                primaryInterest: [],
+                otherInterests: '',
                 preferredCallTime: '',
                 budget: ''
             });
@@ -3898,7 +3913,7 @@ function OrganizationContactForm() {
                 children: "Let our business help yours."
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 221,
+                lineNumber: 230,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3906,7 +3921,7 @@ function OrganizationContactForm() {
                 children: "We want to hear from you."
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 222,
+                lineNumber: 231,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -3914,7 +3929,7 @@ function OrganizationContactForm() {
                 children: "Name of Business *"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 224,
+                lineNumber: 233,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -3928,7 +3943,7 @@ function OrganizationContactForm() {
                 className: "w-full border border-gray-600 rounded px-3 py-2 text-lg font-light"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 225,
+                lineNumber: 234,
                 columnNumber: 7
             }, this),
             errors.businessName && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3936,7 +3951,7 @@ function OrganizationContactForm() {
                 children: errors.businessName
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 232,
+                lineNumber: 241,
                 columnNumber: 31
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -3944,7 +3959,7 @@ function OrganizationContactForm() {
                 children: "Business Type *"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 235,
+                lineNumber: 244,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$select$2f$dist$2f$react$2d$select$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"], {
@@ -3959,7 +3974,7 @@ function OrganizationContactForm() {
                 isClearable: false
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 236,
+                lineNumber: 245,
                 columnNumber: 7
             }, this),
             errors.businessType && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3967,7 +3982,7 @@ function OrganizationContactForm() {
                 children: errors.businessType
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 244,
+                lineNumber: 253,
                 columnNumber: 31
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -3975,7 +3990,7 @@ function OrganizationContactForm() {
                 children: "Full Name *"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 247,
+                lineNumber: 256,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -3989,7 +4004,7 @@ function OrganizationContactForm() {
                 className: "w-full border border-gray-600 rounded px-3 py-2 text-lg font-light"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 248,
+                lineNumber: 257,
                 columnNumber: 7
             }, this),
             errors.fullName && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3997,7 +4012,7 @@ function OrganizationContactForm() {
                 children: errors.fullName
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 255,
+                lineNumber: 264,
                 columnNumber: 27
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4005,7 +4020,7 @@ function OrganizationContactForm() {
                 children: "Email *"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 257,
+                lineNumber: 266,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4020,7 +4035,7 @@ function OrganizationContactForm() {
                 className: "w-full border border-gray-600 rounded px-3 py-2 text-lg font-light"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 258,
+                lineNumber: 267,
                 columnNumber: 7
             }, this),
             errors.email && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4028,7 +4043,7 @@ function OrganizationContactForm() {
                 children: errors.email
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 266,
+                lineNumber: 275,
                 columnNumber: 24
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4036,7 +4051,7 @@ function OrganizationContactForm() {
                 children: "Phone *"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 268,
+                lineNumber: 277,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4058,7 +4073,7 @@ function OrganizationContactForm() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/OrganizationContactForm.tsx",
-                        lineNumber: 270,
+                        lineNumber: 279,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4080,7 +4095,7 @@ function OrganizationContactForm() {
                         className: "w-2/3 border border-gray-600 rounded px-3 py-2 text-lg font-light"
                     }, void 0, false, {
                         fileName: "[project]/components/OrganizationContactForm.tsx",
-                        lineNumber: 282,
+                        lineNumber: 291,
                         columnNumber: 9
                     }, this),
                     errors.phone && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4088,13 +4103,13 @@ function OrganizationContactForm() {
                         children: errors.phone
                     }, void 0, false, {
                         fileName: "[project]/components/OrganizationContactForm.tsx",
-                        lineNumber: 297,
+                        lineNumber: 306,
                         columnNumber: 24
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 269,
+                lineNumber: 278,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4102,7 +4117,7 @@ function OrganizationContactForm() {
                 children: "Date of Submission *"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 300,
+                lineNumber: 309,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$datepicker$2f$dist$2f$index$2e$es$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -4113,12 +4128,12 @@ function OrganizationContactForm() {
                     }),
                 customInput: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CustomInput, {}, void 0, false, {
                     fileName: "[project]/components/OrganizationContactForm.tsx",
-                    lineNumber: 305,
+                    lineNumber: 314,
                     columnNumber: 22
                 }, void 0)
             }, dateKey, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 301,
+                lineNumber: 310,
                 columnNumber: 7
             }, this),
             errors.selectedDate && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4126,7 +4141,7 @@ function OrganizationContactForm() {
                 children: errors.selectedDate
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 307,
+                lineNumber: 316,
                 columnNumber: 31
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4134,40 +4149,49 @@ function OrganizationContactForm() {
                 children: "I am interested in *"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 309,
+                lineNumber: 318,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$select$2f$dist$2f$react$2d$select$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"], {
-                options: interestedOptions.map((opt)=>({
-                        label: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            children: opt
-                        }, void 0, false, {
-                            fileName: "[project]/components/OrganizationContactForm.tsx",
-                            lineNumber: 311,
-                            columnNumber: 57
-                        }, void 0),
-                        value: opt
-                    })),
-                styles: customStyles,
-                value: formData.primaryInterest ? {
-                    label: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        children: formData.primaryInterest
-                    }, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "space-y-2 border border-gray-600 rounded px-3 py-2 bg-transparent",
+                children: interestedOptions.map((option)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                        className: "flex items-center cursor-pointer hover:bg-gray-800/20 px-2 py-1 rounded transition-colors",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                type: "checkbox",
+                                checked: formData.primaryInterest.includes(option),
+                                onChange: ()=>{
+                                    setFormData((prev)=>({
+                                            ...prev,
+                                            primaryInterest: prev.primaryInterest.includes(option) ? prev.primaryInterest.filter((item)=>item !== option) : [
+                                                ...prev.primaryInterest,
+                                                option
+                                            ]
+                                        }));
+                                },
+                                className: "mr-3 w-4 h-4 text-[#5AA5E9] bg-transparent border-gray-600 rounded focus:ring-[#5AA5E9] focus:ring-2 focus:ring-offset-0"
+                            }, void 0, false, {
+                                fileName: "[project]/components/OrganizationContactForm.tsx",
+                                lineNumber: 322,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-white text-lg font-light",
+                                children: option
+                            }, void 0, false, {
+                                fileName: "[project]/components/OrganizationContactForm.tsx",
+                                lineNumber: 335,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, option, true, {
                         fileName: "[project]/components/OrganizationContactForm.tsx",
-                        lineNumber: 313,
-                        columnNumber: 52
-                    }, void 0),
-                    value: formData.primaryInterest
-                } : null,
-                onChange: (val)=>setFormData({
-                        ...formData,
-                        primaryInterest: val ? val.value : ''
-                    }),
-                placeholder: "Select an option",
-                isClearable: false
+                        lineNumber: 321,
+                        columnNumber: 11
+                    }, this))
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 310,
+                lineNumber: 319,
                 columnNumber: 7
             }, this),
             errors.primaryInterest && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4175,15 +4199,37 @@ function OrganizationContactForm() {
                 children: errors.primaryInterest
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 319,
+                lineNumber: 340,
                 columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                className: "block mb-1",
+                children: "Other Interests"
+            }, void 0, false, {
+                fileName: "[project]/components/OrganizationContactForm.tsx",
+                lineNumber: 343,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                name: "otherInterests",
+                value: formData.otherInterests,
+                onChange: (e)=>setFormData({
+                        ...formData,
+                        otherInterests: e.target.value
+                    }),
+                placeholder: "Please specify any other interests not listed above",
+                className: "w-full border border-gray-600 rounded px-3 py-2 text-lg font-light"
+            }, void 0, false, {
+                fileName: "[project]/components/OrganizationContactForm.tsx",
+                lineNumber: 344,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                 className: "block mb-1",
                 children: "Inquiry Details *"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 322,
+                lineNumber: 352,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -4196,7 +4242,7 @@ function OrganizationContactForm() {
                 className: "w-full border border-gray-600 rounded px-3 py-2 text-lg font-light"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 323,
+                lineNumber: 353,
                 columnNumber: 7
             }, this),
             errors.inquiry && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4204,7 +4250,7 @@ function OrganizationContactForm() {
                 children: errors.inquiry
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 329,
+                lineNumber: 359,
                 columnNumber: 26
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4212,7 +4258,7 @@ function OrganizationContactForm() {
                 children: "Budget (AED) - Monthly or per project "
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 331,
+                lineNumber: 361,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4226,7 +4272,7 @@ function OrganizationContactForm() {
                 className: "w-full border border-gray-600 rounded px-3 py-2 text-lg font-light"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 332,
+                lineNumber: 362,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4234,7 +4280,7 @@ function OrganizationContactForm() {
                 children: "Business Size"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 340,
+                lineNumber: 370,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$select$2f$dist$2f$react$2d$select$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"], {
@@ -4249,7 +4295,7 @@ function OrganizationContactForm() {
                 isClearable: false
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 341,
+                lineNumber: 371,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4257,7 +4303,7 @@ function OrganizationContactForm() {
                 children: "Years in Business"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 350,
+                lineNumber: 380,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$select$2f$dist$2f$react$2d$select$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"], {
@@ -4272,7 +4318,7 @@ function OrganizationContactForm() {
                 isClearable: false
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 351,
+                lineNumber: 381,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4280,7 +4326,7 @@ function OrganizationContactForm() {
                 children: "What is the best time to call you?"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 360,
+                lineNumber: 390,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$select$2f$dist$2f$react$2d$select$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"], {
@@ -4295,7 +4341,7 @@ function OrganizationContactForm() {
                 isClearable: false
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 361,
+                lineNumber: 391,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4303,7 +4349,7 @@ function OrganizationContactForm() {
                 children: "Where did you hear about us?"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 370,
+                lineNumber: 400,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4316,7 +4362,7 @@ function OrganizationContactForm() {
                 className: "w-full border border-gray-600 rounded px-3 py-2 text-lg font-light"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 371,
+                lineNumber: 401,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -4325,17 +4371,17 @@ function OrganizationContactForm() {
                 children: "Submit"
             }, void 0, false, {
                 fileName: "[project]/components/OrganizationContactForm.tsx",
-                lineNumber: 378,
+                lineNumber: 408,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/OrganizationContactForm.tsx",
-        lineNumber: 217,
+        lineNumber: 226,
         columnNumber: 5
     }, this);
 }
-_s(OrganizationContactForm, "55QzoOSAj3iCCGTvx8GyBcsN2fQ=");
+_s(OrganizationContactForm, "AhWOQdBU9CzV1qNvX5uhCbmWJwU=");
 _c2 = OrganizationContactForm;
 var _c, _c1, _c2;
 __turbopack_context__.k.register(_c, "CustomInput$forwardRef");
@@ -4539,7 +4585,8 @@ function IndividualContactForm() {
         selectedDate: null,
         inquiry: '',
         referralSource: '',
-        primaryInterest: '',
+        primaryInterest: [],
+        otherInterests: '',
         preferredCallTime: '',
         budget: ''
     });
@@ -4557,6 +4604,10 @@ function IndividualContactForm() {
         requiredFields.forEach((field)=>{
             if (!formData[field]) newErrors[field] = 'Required';
         });
+        // Validate primaryInterest array
+        if (formData.primaryInterest.length === 0) {
+            newErrors.primaryInterest = 'Please select at least one option';
+        }
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
@@ -4581,7 +4632,8 @@ function IndividualContactForm() {
                 selectedDate: null,
                 inquiry: '',
                 referralSource: '',
-                primaryInterest: '',
+                primaryInterest: [],
+                otherInterests: '',
                 preferredCallTime: '',
                 budget: ''
             });
@@ -4600,7 +4652,7 @@ function IndividualContactForm() {
                 children: "Let our business help yours."
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 207,
+                lineNumber: 216,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4608,7 +4660,7 @@ function IndividualContactForm() {
                 children: "We want to hear from you."
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 208,
+                lineNumber: 217,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4616,7 +4668,7 @@ function IndividualContactForm() {
                 children: "Full Name *"
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 210,
+                lineNumber: 219,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4630,7 +4682,7 @@ function IndividualContactForm() {
                 className: "w-full border border-gray-600 rounded px-3 py-2 text-lg font-light"
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 211,
+                lineNumber: 220,
                 columnNumber: 7
             }, this),
             errors.fullName && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4638,7 +4690,7 @@ function IndividualContactForm() {
                 children: errors.fullName
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 218,
+                lineNumber: 227,
                 columnNumber: 27
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4646,7 +4698,7 @@ function IndividualContactForm() {
                 children: "Email *"
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 220,
+                lineNumber: 229,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4661,7 +4713,7 @@ function IndividualContactForm() {
                 className: "w-full border border-gray-600 rounded px-3 py-2 text-lg font-light"
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 221,
+                lineNumber: 230,
                 columnNumber: 7
             }, this),
             errors.email && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4669,7 +4721,7 @@ function IndividualContactForm() {
                 children: errors.email
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 229,
+                lineNumber: 238,
                 columnNumber: 24
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4677,7 +4729,7 @@ function IndividualContactForm() {
                 children: "Phone *"
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 231,
+                lineNumber: 240,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4699,7 +4751,7 @@ function IndividualContactForm() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/IndividualContactForm.tsx",
-                        lineNumber: 233,
+                        lineNumber: 242,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4721,7 +4773,7 @@ function IndividualContactForm() {
                         className: "w-2/3 border border-gray-600 rounded px-3 py-2 text-lg font-light"
                     }, void 0, false, {
                         fileName: "[project]/components/IndividualContactForm.tsx",
-                        lineNumber: 245,
+                        lineNumber: 254,
                         columnNumber: 9
                     }, this),
                     errors.phone && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4729,13 +4781,13 @@ function IndividualContactForm() {
                         children: errors.phone
                     }, void 0, false, {
                         fileName: "[project]/components/IndividualContactForm.tsx",
-                        lineNumber: 260,
+                        lineNumber: 269,
                         columnNumber: 26
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 232,
+                lineNumber: 241,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4743,7 +4795,7 @@ function IndividualContactForm() {
                 children: "Date of Submission *"
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 263,
+                lineNumber: 272,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$datepicker$2f$dist$2f$index$2e$es$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -4754,12 +4806,12 @@ function IndividualContactForm() {
                     }),
                 customInput: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(CustomInput, {}, void 0, false, {
                     fileName: "[project]/components/IndividualContactForm.tsx",
-                    lineNumber: 268,
+                    lineNumber: 277,
                     columnNumber: 22
                 }, void 0)
             }, dateKey, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 264,
+                lineNumber: 273,
                 columnNumber: 7
             }, this),
             errors.selectedDate && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4767,7 +4819,7 @@ function IndividualContactForm() {
                 children: errors.selectedDate
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 270,
+                lineNumber: 279,
                 columnNumber: 31
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4775,40 +4827,49 @@ function IndividualContactForm() {
                 children: "I am interested in *"
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 272,
+                lineNumber: 281,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$select$2f$dist$2f$react$2d$select$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"], {
-                options: interestedOptions.map((opt)=>({
-                        label: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            children: opt
-                        }, void 0, false, {
-                            fileName: "[project]/components/IndividualContactForm.tsx",
-                            lineNumber: 274,
-                            columnNumber: 57
-                        }, void 0),
-                        value: opt
-                    })),
-                styles: customStyles,
-                value: formData.primaryInterest ? {
-                    label: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        children: formData.primaryInterest
-                    }, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "space-y-2 border border-gray-600 rounded px-3 py-2 bg-transparent",
+                children: interestedOptions.map((option)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                        className: "flex items-center cursor-pointer hover:bg-gray-800/20 px-2 py-1 rounded transition-colors",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                type: "checkbox",
+                                checked: formData.primaryInterest.includes(option),
+                                onChange: ()=>{
+                                    setFormData((prev)=>({
+                                            ...prev,
+                                            primaryInterest: prev.primaryInterest.includes(option) ? prev.primaryInterest.filter((item)=>item !== option) : [
+                                                ...prev.primaryInterest,
+                                                option
+                                            ]
+                                        }));
+                                },
+                                className: "mr-3 w-4 h-4 text-[#5AA5E9] bg-transparent border-gray-600 rounded focus:ring-[#5AA5E9] focus:ring-2 focus:ring-offset-0"
+                            }, void 0, false, {
+                                fileName: "[project]/components/IndividualContactForm.tsx",
+                                lineNumber: 285,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-white text-lg font-light",
+                                children: option
+                            }, void 0, false, {
+                                fileName: "[project]/components/IndividualContactForm.tsx",
+                                lineNumber: 298,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, option, true, {
                         fileName: "[project]/components/IndividualContactForm.tsx",
-                        lineNumber: 276,
-                        columnNumber: 52
-                    }, void 0),
-                    value: formData.primaryInterest
-                } : null,
-                onChange: (val)=>setFormData({
-                        ...formData,
-                        primaryInterest: val ? val.value : ''
-                    }),
-                placeholder: "Select an option",
-                isClearable: false
+                        lineNumber: 284,
+                        columnNumber: 11
+                    }, this))
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 273,
+                lineNumber: 282,
                 columnNumber: 7
             }, this),
             errors.primaryInterest && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4816,15 +4877,37 @@ function IndividualContactForm() {
                 children: errors.primaryInterest
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 282,
+                lineNumber: 303,
                 columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                className: "block mb-1",
+                children: "Other Interests"
+            }, void 0, false, {
+                fileName: "[project]/components/IndividualContactForm.tsx",
+                lineNumber: 306,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                name: "otherInterests",
+                value: formData.otherInterests,
+                onChange: (e)=>setFormData({
+                        ...formData,
+                        otherInterests: e.target.value
+                    }),
+                placeholder: "Please specify any other interests not listed above",
+                className: "w-full border border-gray-600 rounded px-3 py-2 text-lg font-light"
+            }, void 0, false, {
+                fileName: "[project]/components/IndividualContactForm.tsx",
+                lineNumber: 307,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                 className: "block mb-1",
                 children: "Inquiry Details *"
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 285,
+                lineNumber: 315,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -4837,7 +4920,7 @@ function IndividualContactForm() {
                 className: "w-full border border-gray-600 rounded px-3 py-2 text-lg font-light"
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 286,
+                lineNumber: 316,
                 columnNumber: 7
             }, this),
             errors.inquiry && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4845,7 +4928,7 @@ function IndividualContactForm() {
                 children: errors.inquiry
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 292,
+                lineNumber: 322,
                 columnNumber: 26
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4853,7 +4936,7 @@ function IndividualContactForm() {
                 children: "Budget (AED) - Monthly or per project "
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 294,
+                lineNumber: 324,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4867,7 +4950,7 @@ function IndividualContactForm() {
                 className: "w-full border border-gray-600 rounded px-3 py-2 text-lg font-light"
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 295,
+                lineNumber: 325,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4875,7 +4958,7 @@ function IndividualContactForm() {
                 children: "What is the best time to call you?"
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 303,
+                lineNumber: 333,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$select$2f$dist$2f$react$2d$select$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["default"], {
@@ -4890,7 +4973,7 @@ function IndividualContactForm() {
                 isClearable: false
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 304,
+                lineNumber: 334,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -4898,7 +4981,7 @@ function IndividualContactForm() {
                 children: "Where did you hear about us?"
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 313,
+                lineNumber: 343,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4911,7 +4994,7 @@ function IndividualContactForm() {
                 className: "w-full border border-gray-600 rounded px-3 py-2 text-lg font-light"
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 314,
+                lineNumber: 344,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -4920,17 +5003,17 @@ function IndividualContactForm() {
                 children: "Submit"
             }, void 0, false, {
                 fileName: "[project]/components/IndividualContactForm.tsx",
-                lineNumber: 321,
+                lineNumber: 351,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/IndividualContactForm.tsx",
-        lineNumber: 203,
+        lineNumber: 212,
         columnNumber: 5
     }, this);
 }
-_s(IndividualContactForm, "J+Bgrrk6xbfjFaDBFkSxd4K/Knc=");
+_s(IndividualContactForm, "XAOt6PfrQIm3Q7I7ddzo1sTQJZc=");
 _c2 = IndividualContactForm;
 var _c, _c1, _c2;
 __turbopack_context__.k.register(_c, "CustomInput$forwardRef");
@@ -5169,7 +5252,7 @@ const Footer = ()=>{
                                 ].map(({ label, href })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                             href: href,
-                                            className: "relative inline-block transition-colors duration-300 hover:text-white   after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px]   after:w-full after:scale-x-0 after:bg-white after:origin-left   after:transition-transform after:duration-300 hover:after:scale-x-100",
+                                            className: "relative inline-block transition-colors duration-300 hover:text-white after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:scale-x-0 after:bg-white after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100",
                                             children: label
                                         }, void 0, false, {
                                             fileName: "[project]/components/Footer.tsx",
@@ -5357,7 +5440,7 @@ const Footer = ()=>{
                 whileInView: "show",
                 className: "font-poppins font-medium text-[clamp(0.75rem,1vw,1rem)] text-gray-600 pt-[clamp(1rem,2vw,2.5rem)] text-center mt-[clamp(1.5rem,3vw,3rem)]",
                 children: [
-                    "©2025",
+                    "©2024",
                     ' ',
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                         href: "#aboutus",

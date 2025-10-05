@@ -43,16 +43,17 @@ const contactFormSchemaIndividual: ContactFormSchemaIndividual = {
             validation: (Rule: Rule) => Rule.required().email()
         },
         {
+            name: 'countryCode',
+            title: 'Country Code',
+            type: 'string'
+        },
+        {
             name: 'phone',
             title: 'Phone Number',
             type: 'string',
             validation: (Rule: Rule) => Rule.required()
         },
-        {
-            name: 'countryCode',
-            title: 'Country Code',
-            type: 'string'
-        },
+        
         {
             name: 'selectedDate',
             title: 'Date of Submission',
@@ -61,8 +62,15 @@ const contactFormSchemaIndividual: ContactFormSchemaIndividual = {
         {
             name: 'primaryInterest',
             title: 'Primary Interest',
-            type: 'string',
-            validation: (Rule: Rule) => Rule.required()
+            type: 'array',
+            of: [{ type: 'string' }],
+            validation: (Rule: Rule) => Rule.required().min(1)
+        },
+        {
+            name: 'otherInterests',
+            title: 'Other Interests',
+            type: 'text',
+            validation: (Rule: Rule) => Rule.max(500)
         },
        
         {

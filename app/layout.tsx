@@ -1,30 +1,32 @@
+'use client'
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
-
+import React, { useEffect, useState } from "react";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Majarah",
-  description: "Professional digital marketing and branding services",
-  icons: {
-    icon: [
-      { url: '/icons/logoBlackUFO.svg', type: 'image/svg+xml' },
-      { url: '/icons/logoblackUFO.svg', type: 'image/svg+xml' }
-    ],
-    shortcut: '/icons/logoBlackUFO.svg',
-    apple: '/icons/logoBlackUFO.svg',
-  },
-};
+import GoogleTranslate from "@/components/GoogleTranslate";
+
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) 
+
+{
+
+
+  
+  
   return (
     <html lang="en">
+      <head>
+    
+      </head>
       <body className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}>
+        
+        
         {children}
         <script
           dangerouslySetInnerHTML={{
