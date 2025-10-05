@@ -17,3 +17,15 @@ export { metadata, viewport } from 'next-sanity/studio'
 export default function StudioPage() {
   return <NextStudio config={config} />
 }
+
+// FIX: This function tells Next.js which paths to generate for the dynamic route.
+// Without it, the build process fails.
+export async function generateStaticParams() {
+  // In a real application, you would typically fetch a list of slugs from your Sanity API.
+  // For this fix, we are hardcoding a path that is likely used for the Studio.
+  const paths = [
+    { tool: ['studio'] }
+  ];
+
+  return paths;
+}
